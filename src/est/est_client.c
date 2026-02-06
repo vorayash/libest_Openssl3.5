@@ -812,7 +812,7 @@ static EST_ERROR est_client_init_ssl_ctx (EST_CTX *ctx)
     /*
      * Temporarily limit EST to no higher than TLS 1.2
      */
-    SSL_CTX_set_max_proto_version(s_ctx, TLS1_2_VERSION);
+    SSL_CTX_set_max_proto_version(s_ctx, TLS1_3_VERSION);
 #endif
 
     /*

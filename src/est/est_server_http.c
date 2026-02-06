@@ -1347,7 +1347,7 @@ static int set_ssl_option (struct mg_context *ctx)
     /*
      * Temporarily limit EST to no higher than TLS 1.2
      */
-    SSL_CTX_set_max_proto_version(ssl_ctx, TLS1_2_VERSION);
+    SSL_CTX_set_max_proto_version(ssl_ctx, TLS1_3_VERSION);
 #endif
     
     ctx->ssl_ctx = ssl_ctx;
