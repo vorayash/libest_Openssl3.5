@@ -218,7 +218,7 @@ static void us1864_test1 (void)
     /*
      * Make sure we don't allow DIGEST mode when in FIPS mode
      */
-    if (!false) {
+    if (!0) {
         printf("FIPS mode not supported, skipping test to prevent digest auth when in FIPS mode");
     } else {
         est_rv = est_server_set_auth_mode(ctx, AUTH_DIGEST);

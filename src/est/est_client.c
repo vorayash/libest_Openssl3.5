@@ -6534,7 +6534,7 @@ EST_ERROR est_client_brski_send_enroll_status (EST_CTX *ctx, EST_BRSKI_STATUS_VA
          * HTTPS digest mode requires the use of MD5.  Make sure we're not
          * in FIPS mode and can use MD5
          */
-        if (ctx->auth_mode == AUTH_DIGEST && (false)){
+        if (ctx->auth_mode == AUTH_DIGEST && (0)){
             EST_LOG_ERR("HTTP digest auth not allowed while in FIPS mode");
             rv = EST_ERR_BAD_MODE;
             goto err;

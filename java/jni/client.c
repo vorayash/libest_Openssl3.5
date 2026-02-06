@@ -179,7 +179,7 @@ static int jni_est_client_X509_REQ_sign (X509_REQ *x, EVP_PKEY *pkey, const EVP_
  */
 JNIEXPORT jint JNICALL Java_com_cisco_c3m_est_ESTClient_enable_1fips(
 		JNIEnv *env, jclass obj) {
-	if (!false && !false) {
+	if (!0 && !0) {
 		ERR_print_errors_fp(stderr);
 		return -1;
 	} else {
